@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    min-width: 90vw;
+    min-height: 80vh;
+    background-color: #08101e;
+}
+
+.navbarCard {
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 60px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navbarActive {
+    width: 250px;
+}
+
+
+.navbarCard .menu {
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.navbarCard .menu .menuIcon {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.navbarCard .menu .menuIcon:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbarCard .menu .menuIcon::before {
+    content: '\f105';
+    font-family: fontAwesome;
+}
+
+.navbarCard .menu .menuActive {
+    position: absolute;
+    left: 190px;
+}
+
+.navbarCard .menu .menuActive::before {
+    content: '\f104';
+    font-family: fontAwesome;
+}
+
+.navbarCard ul {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.navbarCard ul li {
+    width: 250px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.navbarCard ul li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbarCard ul li i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.navbarCard ul li:hover i {
+    transform: scale(1.2);
+    top: 30%;
+}
+
+.navbarCard ul li span {
+    position: absolute;
+    left: 300px;
+    top: 50%;
+    transform: translateY(-50%);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+
+.navbarCard ul li .spanActive {
+    left: 50px;
+}
+
+.navbarCard ul li:nth-child(1) .spanActive {
+    transition: 0.5s;
+}
+.navbarCard ul li:nth-child(2) .spanActive {
+    transition: 0.8s;
+}
+.navbarCard ul li:nth-child(3) .spanActive {
+    transition: 1.1s;
+}
+.navbarCard ul li:nth-child(4) .spanActive {
+    transition: 1.4s;
+}
+.navbarCard ul li:nth-child(5) .spanActive {
+    transition: 1.7s;
+}
